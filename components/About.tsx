@@ -10,9 +10,17 @@ function About({}: Props) {
         About
       </h3>
       <motion.img
-        src="/images/profile2.jpeg"
-        className="mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-56 md:h-56 xl:w-[500px] xl:h-[600px]"
+        initial={{ x: -200 }}
+        transition={{ duration: 1.5 }}
+        src="/images/profile3.jpg"
+        className="mb-10 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 ml-[390px]"
       />
+      <div className="space-y-10 px-0 md:px-10">
+        <h4 className="text-sm font-semibold">
+          Here is <span className="underline decoration">Satish Marutham </span>
+          having 7 Years experince in IT
+        </h4>
+      </div>
     </div>
   );
 }
