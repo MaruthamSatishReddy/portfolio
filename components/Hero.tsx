@@ -25,7 +25,7 @@ function Hero({}: Props) {
           <span> {text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
-        <div className="text-sm">
+        <div className="text-sm py-10">
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>
