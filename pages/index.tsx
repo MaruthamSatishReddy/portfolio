@@ -9,7 +9,7 @@ import WorkingExperience from '../components/WorkingExperience';
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-stone-900 text-white ">
+    <div className="bg-stone-900 text-white">
       <Head>
         <title>Satish Marutham</title>
       </Head>
