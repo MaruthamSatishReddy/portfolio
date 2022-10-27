@@ -6,21 +6,26 @@ type Props = {};
 function About({}: Props) {
   return (
     <motion.div
-      initial={{ x: 0, opacity: 1 }}
-      transition={{ duration: 1.5 }}
-      className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl justify-evenly mx-auto items-center"
+      initial={{ x: 0 }}
+      transition={{ duration: 1.2 }}
+      className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly max-auto items-center"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
-
+      <motion.img
+        initial={{ x: 0 }}
+        transition={{ duration: 1.2 }}
+        src="/images/profile2.jpeg"
+        className="-mb-20 md:mb-0 text-current w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-100 md:mt-10 xl:w-[500px] xl:h-[580px]"
+      />
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-sm">Here is Satish Marutham</h4>
-        <p className="text-base">
+        <p className="text-xs">
           Having 7 years of experience in software development with
           specialization in middleware application development using
-          CoreJava,Spring MVC, Spring Boot,
-          JPA,Jenkins,Demandware,SonarQube,Docker,Kubernates,NextJs,Mongodb,MicroServices.
+          CoreJava,Spring MVC, Spring
+          Boot,JPA,Jenkins,Demandware,SonarQube,Docker,Kubernates,NextJs,Mongodb,MicroServices.
         </p>
       </div>
     </motion.div>

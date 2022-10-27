@@ -9,7 +9,7 @@ import WorkingExperience from '../components/WorkingExperience';
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-stone-900 text-white">
+    <div className="bg-stone-900 text-white snap-y snap-mandatory">
       <Head>
         <title>Satish Marutham</title>
       </Head>
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       <section id="workingexperience" className="snap-center">
         <WorkingExperience />
       </section>
-      <section id="skills" className="snap-center">
+      <section id="skills" className="snap-start">
         <Skills />
       </section>
       <section id="projects" className="snap-end">
