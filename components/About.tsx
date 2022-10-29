@@ -13,19 +13,14 @@ function About({}: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
-      <motion.img
-        initial={{ x: 0 }}
-        transition={{ duration: 1.2 }}
-        src="/images/profile2.jpeg"
-        className="-mb-20 md:mb-0 text-current w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-100 md:mt-10 xl:w-[500px] xl:h-[580px]"
-      />
+
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-sm">Here is Satish Marutham</h4>
         <p className="text-xs">
-          Having 7 years of experience in software development with
-          specialization in middleware application development using
-          CoreJava,Spring MVC, Spring
-          Boot,JPA,Jenkins,Demandware,SonarQube,Docker,Kubernates,NextJs,Mongodb,MicroServices.
+          To be a member of an organization where growth prospects are unlimited
+          and individual is recognized by his work. As a professional I am
+          creative, innovative and looking ahead to work in a challenging
+          environment and strive for excellence.
         </p>
       </div>
     </motion.div>

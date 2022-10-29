@@ -7,3 +7,8 @@
     hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40;
   }
 }
+@layer base {
+  html {
+    font-family: Trebuchet MS, Trebuchet MS, Trebuchet MS;
+  }
+}
