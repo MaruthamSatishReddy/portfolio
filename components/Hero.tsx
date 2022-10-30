@@ -18,12 +18,9 @@ function Hero({}: Props) {
         className="rounded-full w-40 h-40 object-cover"
       />
       <div className="z-20">
-        <h3 className="md:pl-[8rem] text-sm uppercase text-grey-500 pb-2 max-lg:pl-[9rem]">
+        <h3 className="md:pl-[9rem] text-sm uppercase text-grey-500 pb-2 max-lg:pl-[9rem]">
           Software Engineer
         </h3>
-        <h1 className="text-2xl lg:text-3xl font-semibold md:text-xs">
-          <Cursor cursorColor="#F7AB0A" />
-        </h1>
         <div className="text-sm">
           <Link href="#about">
             <button className="heroButton">About</button>
