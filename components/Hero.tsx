@@ -18,7 +18,7 @@ function Hero({}: Props) {
         className="rounded-full w-40 h-40 object-cover"
       />
       <div className="z-20">
-        <h3 className="md:pl-[9rem] text-sm uppercase text-grey-500 pb-2 max-lg:pl-[9rem]">
+        <h3 className="text-sm uppercase text-grey-500 pb-2 max-lg:pl-[9rem]">
           Software Engineer
         </h3>
         <div className="text-sm">
@@ -33,6 +33,9 @@ function Hero({}: Props) {
           </Link>
           <Link href="#projects">
             <button className="heroButton">Projects</button>
+          </Link>
+          <Link href="#contactus">
+            <button className="heroButton">Contact Me</button>
           </Link>
         </div>
       </div>
