@@ -5,13 +5,13 @@ type Props = {};
 
 function ExperienceCard({}: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-8 flex-shrink-0 w-[500px] md:w-[600px] lg:w-[1200px] snap-center bg-[#292929] p-9 hover:opacity-100 opacity-40">
+    <article className="flex flex-col rounded-lg items-center space-y-8 flex-shrink-0 w-[500px] md:w-[600px] lg:w-[1200px] snap-center bg-[#292929] p-9 hover:opacity-100 opacity-40 md:px-10 md:h-full">
       <motion.img
         src="/images/altimetrik.png"
-        className="w-32 h-32 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center top-10"
+        className="w-32 h-32 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center md:top-0"
         alt="Experience"
       />
-      <div className="px-10 md:px-10">
+      <div className="px-10 md:px-10 md:p-10">
         <h4 className="text-3xl font-light">Software Engineer</h4>
         <p className="font-bold text-1xl mt-1">Altimetrik India Pvt Ltd</p>
         <div className="flex space-x-2 my-2">
