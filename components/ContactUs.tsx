@@ -1,7 +1,6 @@
 import React from 'react';
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
 import { useForm, Resolver } from 'react-hook-form';
-import { resolveAny } from 'dns';
 type Inputs = {
   name: string;
   email: string;
@@ -18,17 +17,13 @@ const Contact = (props: Props) => {
       (window.location.href = `mailto:smarutham@gmail.com?subject=${formData.subject} & body=My Name is ${formData.name}.${formData.message} (${formData.email})`)
   );
   return (
-    <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-20 uppercase tracking-[2px] text-gray-500 text-xl">
+    <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl justify-evenly mx-auto">
+      <h3 className="absolute top-3 uppercase tracking-[2px] text-gray-500 text-xl items-center">
         Contact
       </h3>
-      <div className="flex flex-col">
-        <h4 className="text-sm font-semibold text-center">
-          I have got just what you need .
-          <span className="decoration-[#F7AB0A] underline">Lets talk</span>
-        </h4>
-        <div>
-          <div className="flex items-center space-x-5 justify-center space-y-5">
+      <div className="flex flex-col sm:p-10">
+        <div className="space-y-10">
+          <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <p className="text-sm">+918867671633</p>
           </div>
@@ -38,7 +33,7 @@ const Contact = (props: Props) => {
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-sm">1234 Developer Lane</p>
+            <p className="text-sm">Bangalore</p>
           </div>
         </div>
         <form
