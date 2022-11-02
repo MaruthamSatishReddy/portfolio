@@ -1,21 +1,26 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Skill } from '../typings';
+import { urlFor } from '../sanity';
 
-type Props = { directionLeft?: boolean };
+type Props = { skill: Skill; directionLeft?: boolean };
 
-function Skill({ directionLeft }: Props) {
+function Skill({ skill, directionLeft }: Props) {
   return (
     <div className="group relative flex cursor-pointer">
       <motion.img
-        initial={{ x: directionLeft ? -10 : 10, opacity: 1 }}
-        transition={{ duration: 1 }}
+        whileHover={{ scale: 1.2, rotate: 90 }}
+        whileTap={{ scale: 0.8, rotate: -90, borderRadius: '100%' }}
         className="h-10 w-10 rounded-full border-gray-500 object-cover  xl:w-10 xl:h-10 filter group-hover:grayscale transition duration-300 ease-in-out"
-        src="/images/java.jpg"
+        src={urlFor(skill?.image).url()}
         alt=""
       />
-      <div className="absolute opacity-0 group-hover:opacity-0 transition duration-300 ease-in-out group-hover:bg-white h-10 w-10 md:h-12 md:w-12 xl:h-10 xl:w-10 rounded-full z-0">
+
+      <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:h-12 md:w-12 xl:h-10 xl:w-10 rounded-full z-0">
         <div className="flex items-center justify-center h-full">
-          <p className="text-lg font-bold text-black opacity-300">100</p>
+          <p className="text-lg font-bold text-black opacity-100">
+            {skill?.progress}
+          </p>
         </div>
       </div>
     </div>
