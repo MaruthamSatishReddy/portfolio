@@ -13,7 +13,7 @@ function ExperienceCard({ experience }: Props) {
         className="w-32 h-32 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center md:top-0"
         alt="Experience"
       />
-      <div className="px-10 md:px-10 md:p-10">
+      <div className="px-10 md:px-10 md:p-10" key={experience._id}>
         <h4 className="text-3xl font-light">{experience.jobTitle}</h4>
         <p className="font-bold text-1xl mt-1">{experience.company}</p>
         <div className="flex space-x-2 my-2">
