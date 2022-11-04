@@ -21,7 +21,7 @@ function ExperienceCard({ experience }: Props) {
           {experience?.technologies.map((technology) => {
             return (
               <img
-                key={technology._id}
+                key={experience._id}
                 className="h-10 w-10 rounded-full"
                 src=""
                 alt=""
